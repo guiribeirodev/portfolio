@@ -1,19 +1,19 @@
 export const profile = {
-	fullName: 'Your Name',
-	title: '',
+	fullName: 'Guilherme Ribeiro',
+	title: 'Desenvolvedor Full-Stack',
 	institute: '',
-	author_name: '', // Author name to be highlighted in the papers section
+	author_name: 'Guilherme Ribeiro', // Author name to be highlighted in the papers section
 	research_areas: [
-		// { title: 'Physics', description: 'Brief description of the research interest', field: 'physics' },
+		{ title: 'Physics', description: 'Brief description of the research interest', field: 'physics' },
 	],
 }
 
 // Set equal to an empty string to hide the icon that you don't want to display
 export const social = {
-	email: '',
-	linkedin: '',
-	x: 'https://www.x.com/',
-	github: '',
+	email: 'guiribeirodev@gmail.com',
+	linkedin: 'https://www.linkedin.com/in/guiribeirodev/',
+	// x: 'https://www.x.com/',
+	github: 'https://www.github.com/guiribeirodev',
 	gitlab: '',
 	scholar: '',
 	inspire: '',
@@ -32,7 +32,7 @@ export const template = {
 }
 
 export const seo = {
-	default_title: 'Astro Academia',
-	default_description: 'Astro Academia is a template for academic websites.',
+	default_title: 'Guiribeirodev',
+	default_description: 'Site pessoal/porfolio e blog',
 	default_image: '/images/astro-academia.png',
 }

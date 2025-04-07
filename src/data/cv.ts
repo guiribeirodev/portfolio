@@ -1,6 +1,6 @@
 export const experiences = [
 	{
-		company: '',
+		company: 'teste',
 		time: '',
 		title: '',
 		location: '',
@@ -17,9 +17,9 @@ export const experiences = [
 
 export const education = [
 	{
-		school: '',
-		time: '',
-		degree: '',
+		school: 'Universidade Cruzeiro do Sul Virtual',
+		time: '2024 - Cursando',
+		degree: 'Analise e Desenvolvimento de Sistemas',
 		location: '',
 		description: '',
 	},
@@ -34,7 +34,7 @@ export const education = [
 
 export const skills = [
 	{
-		title: '',
+		title: 'HTML/CSS/JS',
 		description: '',
 	},
 	// {
