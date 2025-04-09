@@ -12,10 +12,9 @@ export const profile = {
 export const social = {
 	email: 'guiribeirodev@gmail.com',
 	linkedin: 'https://www.linkedin.com/in/guiribeirodev/',
-	// x: 'https://www.x.com/',
+	x: '',
 	github: 'https://www.github.com/guiribeirodev',
 	gitlab: '',
-	scholar: '',
 	inspire: '',
 	arxiv: '',
 }
