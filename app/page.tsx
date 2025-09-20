@@ -3,6 +3,7 @@ import { ThemeToggle } from "@/components/theme-toggle"
 import { HeroSection } from "@/components/hero-section"
 import { ResearchAreas } from "@/components/research-areas"
 import { Publications } from "@/components/publications"
+import { ProjectsSection } from "@/components/projects-section"
 
 export default function Home() {
   return (
@@ -18,6 +19,8 @@ export default function Home() {
           <HeroSection />
           <ResearchAreas />
           {/* <Publications /> */}
+          <ProjectsSection />
+          
 
           <footer className="mt-16 pt-8 border-t border-border text-center text-muted-foreground">
             <p className="mb-2">Copyright © 2025 - All right reserved by Marie Curie</p>

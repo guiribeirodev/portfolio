@@ -1,33 +1,33 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-// import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
+import { Badge } from "@/components/ui/badge"
 import { ExternalLink, Github } from "lucide-react"
 
 const projects = [
   {
     title: "Portfolio",
     description: "Meu portfolio pessoal",
-    technologies: ["Astro", "React", "TypeScript", "Tailwind CSS"],
+    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
     githubUrl: "https://github.com/guiribeirodev/portfolio",
     liveUrl: "#",
     image: "/project-1.jpg"
   },
-  // {
-  //   title: "Portfolio Website",
-  //   description: "Site pessoal responsivo com design moderno, showcasing projetos e experiências profissionais.",
-  //   technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-  //   githubUrl: "https://github.com/guiribeirodev",
-  //   liveUrl: "#",
-  //   image: "/project-2.jpg"
-  // },
-  // {
-  //   title: "Task Management App",
-  //   description: "Aplicação de gerenciamento de tarefas com funcionalidades avançadas de organização e colaboração.",
-  //   technologies: ["React", "Node.js", "MongoDB", "Express"],
-  //   githubUrl: "https://github.com/guiribeirodev",
-  //   liveUrl: "#",
-  //   image: "/project-3.jpg"
-  // }
+  {
+    title: "To-Do Api",
+    description: "Projeto de API desenvolvido durante o curso do Dunossauro de FastAPI",
+    technologies: ["Python", "FastAPI", "PostgreSQL", "Docker", "Pytest","SQLAlchemy", "Pydantic"],
+    githubUrl: "https://github.com/guiribeirodev/fastapi_zero_duno",
+    liveUrl: "#",
+    image: "/project-2.jpg"
+  },
+  {
+    title: "Controle de Gastos API",
+    description: "API REST para gerenciamento de gastos pessoais que permite criar usuários e registrar transações financeiras (receitas e despesas) com validações de negócio.",
+    technologies: ["Python", "FastAPI", "Pydantic", "Pytest", "PostgreSQL", "SQLAlchemy"],
+    githubUrl: "https://github.com/guiribeirodev/controle-gastos-api",
+    liveUrl: "#",
+    image: "/project-3.jpg"
+  }
 ]
 
 export function ProjectsSection() {
@@ -35,7 +35,7 @@ export function ProjectsSection() {
     <section id="projects" className="py-16 px-6">
       <div className="max-w-4xl mx-auto">
         <div className="mb-12">
-          <h2 className="text-3xl font-bold mb-4">Projects</h2>
+          <h2 className="text-3xl font-bold mb-4">Projetos</h2>
           <p className="text-muted-foreground text-lg">
             Aqui estão alguns dos meus projetos mais recentes, demonstrando minhas habilidades em desenvolvimento web e tecnologias modernas.
           </p>
@@ -58,11 +58,11 @@ export function ProjectsSection() {
               <CardContent>
                 <div className="space-y-4">
                   <div className="flex flex-wrap gap-2">
-                    {/* {project.technologies.map((tech) => (
+                    {project.technologies.map((tech) => (
                       <Badge key={tech} variant="secondary">
                         {tech}
                       </Badge>
-                    ))} */}
+                    ))}
                   </div>
                   
                   <div className="flex gap-3">

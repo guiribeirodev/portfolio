@@ -8,8 +8,8 @@ import { Suspense } from "react"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Marie Curie - Academic Portfolio",
-  description: "Dr. Marie Curie - University of Paris. Research focus on Physics and Chemistry.",
+  title: "Guiribeirodev",
+  description: "Guiribeirodev Portfolio e blog pessoal",
   generator: "v0.app",
 }
 
