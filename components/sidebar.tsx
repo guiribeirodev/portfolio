@@ -6,11 +6,11 @@ import Link from "next/link"
 const navigationItems = [
   { name: "Home", href: "/" },
   { name: "Projects", href: "/projects" },
+  { name: "Blog", href: "/blog" },
 
   // { name: "Research", href: "#research" },
   // { name: "Papers", href: "#papers" },
   // { name: "CV", href: "#cv" },
-  // { name: "Blog", href: "#blog" },
 ]
 
 const socialLinks = [
@@ -41,7 +41,7 @@ export function Sidebar() {
                 className="w-full justify-start text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground"
                 asChild
               >
-                <a href={item.href}>{item.name}</a>
+                <Link href={item.href}>{item.name}</Link>
               </Button>
             </li>
           ))}
