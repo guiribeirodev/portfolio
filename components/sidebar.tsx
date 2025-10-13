@@ -1,6 +1,7 @@
 "use client"
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { assetPath } from "@/lib/asset-path"
 import { Button } from "@/components/ui/button"
 import { Mail, Github, Twitter, Linkedin, FileText, Menu, X } from "lucide-react"
 import Link from "next/link"
@@ -63,7 +64,7 @@ export function Sidebar() {
       >
         <div className="flex flex-col items-center mb-8">
           <Avatar className="w-32 h-32 mb-4">
-            <AvatarImage src="/gui.png" alt="Guilherme Ribeiro" />
+            <AvatarImage src={assetPath("/gui.png")} alt="Guilherme Ribeiro" />
             <AvatarFallback>GR</AvatarFallback>
           </Avatar>
           <h2 className="text-lg font-semibold text-sidebar-foreground text-center">Guilherme Ribeiro</h2>

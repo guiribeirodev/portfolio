@@ -1,4 +1,5 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { assetPath } from "@/lib/asset-path"
 import { Button } from "@/components/ui/button"
 import { Mail, Github, Twitter, Linkedin, FileText } from "lucide-react"
 
@@ -42,7 +43,7 @@ export function HeroSection() {
 
         <div className="ml-8">
           <Avatar className="w-48 h-48">
-            <AvatarImage src="/gui.png" alt="Guilherme Ribeiro" />
+            <AvatarImage src={assetPath("/gui.png")} alt="Guilherme Ribeiro" />
             <AvatarFallback>GR</AvatarFallback>
           </Avatar>
         </div>
