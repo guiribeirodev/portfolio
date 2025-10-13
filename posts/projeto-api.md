@@ -5,7 +5,7 @@ date: "20250922"
 readTime: "3 min"
 author: "Guilherme Ribeiro"
 tags: ["Blog"]
-published: false
+published: true
 coverImage: "/placeholder.jpg"
 ---
 
@@ -37,7 +37,7 @@ Por enquanto é tudo que precisamos.
 
 Iremos utilizar o NPM para a criação do projeto, para isso vá até aonde deseja cria o projeto e digite:
 
-```
+```bash
 mkdir task-api
 npm init -y
 ```
@@ -46,7 +46,7 @@ O npm init com a flag -y irá iniciar o seu projeto sem perguntar nada.
 
 Feito os passos acima será criado um arquivo package.json, este arquivo é o "coração" de um projeto Nodejs, ele funciona como um manifesto e vai conter metadados importantes sobre o projeto e gerenciar dependências e scripts. O package.json nesse momento deve estar algo assim:
 
-´´´json
+```json
 {
   "name": "task-api",
   "version": "1.0.0",
@@ -59,7 +59,7 @@ Feito os passos acima será criado um arquivo package.json, este arquivo é o "c
   "author": "",
   "license": "ISC"
 }
-´´´
+```
 
 Alguns campos importantes neste momento
 
@@ -79,9 +79,9 @@ Este campo contém scripts de linha de comando que podemos executar com o npm, p
 
 Com o projeto criado e dentro do diretório do projeto, agora iremos instalar o Express:
 
-´´´
+```bash
 npm install express
-´´´
+```
 
 Com a instalação concluída você deve ter observado que agora você possui uma pasta "node_modules" e um arquivo package-lock.json. A paste node_modules é uma pasta aonde irá armazenar as dependências do seu projeto, aquelas que foram instaladas pelo NPM.
 
@@ -92,17 +92,17 @@ E o package-lock.json é um arquivo que irá registrar as versões exatas de cad
 Iremos iniciar com o famoso Hello World, e iremos criar o app mais simples possível para iniciar. Crie um arquivo de nome index.js com o seguinte conteúdo:
 
 ```js
-const express = require('express') #Realiza importação
-const app = express() #Instancia o express
-const port = 3000 #Porta a ser utilizada
+const express = require('express') //Realiza importação
+const app = express() //Instancia o express
+const port = 3000 //Porta a ser utilizada
 
-#Estamos pegando o app e dizendo que no caminho "/" iremos ouvir o get e iremos dar uma resposta "res", essa resposta será um Hello World!
-app.get('/', (res) => {
+// Estamos pegando o app e dizendo que no caminho "/" iremos ouvir o get e iremos dar uma resposta "res", essa resposta será um Hello World!
+app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
 
-#Com o app estamos dizendo que vamos ouvir/subir o servidor na porta (configurado anteriormente para ser 3000), e fazer um log no terminal informando que o app está rodando. 
+// Com o app estamos dizendo que vamos ouvir/subir o servidor na porta (configurado anteriormente para ser 3000), e fazer um log no terminal informando que o app está rodando. 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
