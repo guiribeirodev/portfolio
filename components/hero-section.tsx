@@ -43,7 +43,7 @@ export function HeroSection() {
         <div className="ml-8">
           <Avatar className="w-48 h-48">
             <AvatarImage src="/gui.png" alt="Guilherme Ribeiro" />
-            <AvatarFallback>MC</AvatarFallback>
+            <AvatarFallback>GR</AvatarFallback>
           </Avatar>
         </div>
       </div>
