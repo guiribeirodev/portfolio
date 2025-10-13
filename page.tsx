@@ -20,7 +20,7 @@ export default function Home() {
           {/* <Publications /> */}
 
           <footer className="mt-16 pt-8 border-t border-border text-center text-muted-foreground">
-            <p className="mb-2">Copyright © 2025 - All right reserved by Marie Curie</p>
+            <p className="mb-2">Copyright © 2025 - All right reserved by Guiribeirodev</p>
             <p className="text-sm">
               Built with <span className="text-accent">Astro Academia</span> ❤️ by Matteo Barbero
             </p>

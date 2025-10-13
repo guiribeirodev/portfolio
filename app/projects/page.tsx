@@ -3,10 +3,10 @@ import { ProjectsSection } from '@/components/projects-section'
 
 export default function ProjectsPage() {
   return (
-    <div className="flex min-h-screen">
+    <div className="min-h-screen">
       <Sidebar />
       
-      <main className="flex-1 overflow-y-auto">
+      <main className="lg:ml-64 overflow-y-auto">
         <ProjectsSection />
       </main>
     </div>

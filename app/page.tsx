@@ -7,10 +7,10 @@ import { ProjectsSection } from "@/components/projects-section"
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen bg-background">
+    <div className="min-h-screen bg-background">
       <Sidebar />
 
-      <main className="flex-1 p-8">
+      <main className="lg:ml-64 p-8">
         <div className="max-w-4xl mx-auto">
           <div className="flex justify-end mb-8">
             {/* <ThemeToggle /> */}
